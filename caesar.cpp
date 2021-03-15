@@ -19,6 +19,7 @@ int main(){
     while(s[k]!='\0'){
       if('a'<=s[k] && s[k]<='z')newss[k]='a'+(s[k]-'a'+i)%26;
       else if('A'<=s[k] && s[k]<='Z')newss[k]='A'+(s[k]-'A'+i)%26;
+      else newss[k]=s[k];
       k++;
     }
 
